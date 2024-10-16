@@ -29,6 +29,8 @@ public struct GoogleSearchResponse: Codable {
 		public var title: String
 		/// Property for a link to the website
 		public var link: String
+		/// Property for a snippet from the website
+		public var snippet: String
 		/// Computed property returning a URL to the website
 		public var url: URL {
 			return URL(string: link)!
